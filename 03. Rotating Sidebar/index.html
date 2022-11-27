@@ -5,9 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rotating Sidebar</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <h1>Rotating Sidebar</h1>
+    <div class="container">
+      <div class="circle-container">
+        <div class="circle">
+          <button id="close" title="close">
+            <i class="fas fa-times"></i>
+          </button>
+          <button id="open" title="open">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <div class="content">
+        <h1>Rotating Sidebar</h1>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><i class="fas fa-home"></i>Home</li>
+        <li><i class="fas fa-user-alt"></i>About</li>
+        <li><i class="fas fa-envelope"></i>Contact</li>
+      </ul>
+    </nav>
     <script src="./script.js"></script>
   </body>
 </html>
