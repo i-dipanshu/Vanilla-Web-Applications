@@ -33,8 +33,6 @@ const update = () => {
     }
   });
 
-  console.log(progress);
-
   const actives = document.querySelectorAll(".active");
 
   progress.style.width =
