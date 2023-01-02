@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.split {
+  position: absolute;
+  width: 50vw;
+  height: inherit;
+}
+
+.split.left {
+  left: 0;
+  transition: width 0.5s ease-in;
+  background: url("./images/ronaldo.png") no-repeat center center/cover;
+}
+
+.split.right {
+  right: 0;
+  transition: width 0.5s ease-in;
+  background: url("./images/Messi.png") no-repeat center center/cover;
+}
+
+.hover-right .right {
+  width: 60%;
+  transition: width 0.5s ease-in;
+}
+
+.hover-right .left {
+  width: 40%;
+  filter: blur(2px);
+  transition: width 0.5s ease-in;
+}
+
+.hover-left .left {
+  width: 60%;
+  transition: width 0.5s ease-in;
+}
+
+.hover-left .right {
+  width: 40%;
+  filter: blur(2px);
+  transition: width 0.5s ease-in;
+}
